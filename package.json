@@ -1,0 +1,24 @@
+{
+  "name": "Mobile-3dsi3",
+  "version": "1.0.0",
+  "main": "implementa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoBibiano/Mobile-3dsi3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoBibiano/Mobile-3dsi3/issues"
+  },
+  "homepage": "https://github.com/GustavoBibiano/Mobile-3dsi3#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

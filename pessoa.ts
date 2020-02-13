@@ -1,38 +1,36 @@
 namespace empresa{
-    export class Pessoa{
-        //Atributos - Caracteristicas da classe
-        private _nome: string;
-        private _idade: number;
-        private _cpf: string;
+    class Pessoa{
+        //informações da classe
+        private nome:string;
+        private cpf:string;
+        private idade:number|undefined;
 
-        //metodos são as ações da classe
-        public getNome(): string{
-            return this._nome;
+        constructor(nome:string, cpf:string){
+            this.cpf = cpf;
+            this.nome = nome;
         }
 
-        public setNome(nome: string): void{
-            if(nome != ""){
-                this._nome = nome;
-            }
-           
+        getCpf():string{
+            return this.cpf;
         }
 
-        public getIdade(): string{
-            return this._nome;
+        //mostra o valor
+        getNome():string|undefined{
+            return this.nome;
         }
 
-        public setIdade(idade: number): void{
-            this._idade = idade;
+        //altera o valor
+        setNome(nome:string):void{
+            this.nome = nome;
+        }
+        
+        getIdade():number|undefined{
+            return this.idade;
         }
 
-         public getCpf(): string{
-            return this._cpf;
+        //altera o valor
+        setIdade(idade:number):void{
+            this.idade = idade;
         }
-
-        public setCpf(cpf: string): void{
-            this._cpf = cpf;
-        }
-
     }
-  
 }

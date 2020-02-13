@@ -1,5 +1,5 @@
 namespace empresa{
-    class Cliente{
+    export class Cliente{
         private _codCliente: number;
         private _credito: number;
 
