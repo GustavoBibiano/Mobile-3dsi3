@@ -2,9 +2,7 @@
 var hospital;
 (function (hospital) {
     var Pessoa = /** @class */ (function () {
-        function Pessoa(nome, cpf) {
-            this.cpf = cpf;
-            this.nome = nome;
+        function Pessoa() {
         }
         Pessoa.prototype.getCpf = function () {
             return this.cpf;

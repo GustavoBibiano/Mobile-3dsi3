@@ -1,6 +1,6 @@
 namespace hospital{
     export class Hospital{
-        private nomeHospital:string;
+        private nomeHospital:string | undefined;
         private enfermeiros:Array<Enfermeiro> = [];
         private medicos:Array<Medico> = [];
         private pacientes: Array<Paciente> = [];
@@ -17,7 +17,7 @@ namespace hospital{
             this.enfermeiros.push(enfermeiro);
         }
 
-        getEnfermeiro(){
+        getEnfermeiros(){
             return this.enfermeiros;
         }
 
@@ -25,7 +25,7 @@ namespace hospital{
             this.medicos.push(medico);
         }
 
-        getMedico(){
+        getMedicos(){
             return this.medicos;
         }
 
@@ -33,7 +33,7 @@ namespace hospital{
             this.pacientes.push(paciente);
         }
 
-        getPaciente(){
+        getPacientes(){
             return this.pacientes;
         }
     }

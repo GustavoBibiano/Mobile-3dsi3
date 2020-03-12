@@ -1,15 +1,10 @@
 namespace hospital{
     export class Pessoa{
         //informações da classe
-        private nome:string;
-        private cpf:string;
+        private nome:string | undefined;
+        private cpf:string | undefined;
 
-        constructor(nome:string, cpf:string){
-            this.cpf = cpf;
-            this.nome = nome;
-        }
-
-        getCpf():string{
+        getCpf() :string | undefined{
             return this.cpf;
         }
 
@@ -18,7 +13,7 @@ namespace hospital{
         }
 
         //mostra o valor
-        getNome():string{
+        getNome():string | undefined{
             return this.nome;
         }
 

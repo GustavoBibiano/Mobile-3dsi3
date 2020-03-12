@@ -1,7 +1,8 @@
 namespace hospital{
     export class Medico extends Funcionario{
-        private crm: number;
-        private especialidade: string;
+        private crm: number | undefined;
+        private especialidade: string | undefined;
+        
 
         getCrm(): number{
             return this.crm;

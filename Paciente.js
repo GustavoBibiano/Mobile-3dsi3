@@ -16,15 +16,13 @@ var hospital;
 (function (hospital) {
     var Paciente = /** @class */ (function (_super) {
         __extends(Paciente, _super);
-        function Paciente(nome, cpf, cod) {
-            var _this = _super.call(this, nome, cpf) || this;
-            _this.codPaciente = cod;
-            return _this;
+        function Paciente() {
+            return _super !== null && _super.apply(this, arguments) || this;
         }
-        Paciente.prototype.getCodCliente = function () {
+        Paciente.prototype.getCodPaciente = function () {
             return this.codPaciente;
         };
-        Paciente.prototype.setCodCliente = function (codPaciente) {
+        Paciente.prototype.setCodPaciente = function (codPaciente) {
             this.codPaciente = codPaciente;
         };
         return Paciente;

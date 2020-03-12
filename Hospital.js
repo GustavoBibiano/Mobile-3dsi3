@@ -16,19 +16,19 @@ var hospital;
         Hospital.prototype.addEnfermeiro = function (enfermeiro) {
             this.enfermeiros.push(enfermeiro);
         };
-        Hospital.prototype.getEnfermeiro = function () {
+        Hospital.prototype.getEnfermeiros = function () {
             return this.enfermeiros;
         };
         Hospital.prototype.addMedico = function (medico) {
             this.medicos.push(medico);
         };
-        Hospital.prototype.getMedico = function () {
+        Hospital.prototype.getMedicos = function () {
             return this.medicos;
         };
         Hospital.prototype.addPaciente = function (paciente) {
             this.pacientes.push(paciente);
         };
-        Hospital.prototype.getPaciente = function () {
+        Hospital.prototype.getPacientes = function () {
             return this.pacientes;
         };
         return Hospital;
