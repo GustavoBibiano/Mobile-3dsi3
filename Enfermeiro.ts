@@ -1,8 +1,8 @@
 namespace hospital{
     export class Enfermeiro extends Funcionario{
-        private coren: number;
+        private coren: number|undefined;
 
-        getCoren(): number{
+        getCoren(): number|undefined{
             return this.coren;
         }
 

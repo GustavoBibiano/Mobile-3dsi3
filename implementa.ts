@@ -64,8 +64,6 @@ namespace hospital{
     pacientes[2].setCpf('22465463849');
     pacientes[2].setCodPaciente(777);
 
-    //Adicionando os objetos na classe Hospital
-
     medicos.forEach( medico => {
         hospital.addMedico(medico);
     });
@@ -82,7 +80,7 @@ namespace hospital{
     let nomeHospital = document.getElementById('nomeHospital');
     nomeHospital.textContent = hospital.getNomeHospital();
 
-    let tabelaMedicos = document.getElementById('tabelaMedicos');
+    let tbMedicos = document.getElementById('tbMedicos');
     hospital.getMedicos().forEach( medico => {
         let html = `
         <tr>
@@ -93,10 +91,10 @@ namespace hospital{
             <td>${medico.getEspecialidade()}</td>
         </tr>
         `;
-        tabelaMedicos.innerHTML += html;
+        tbMedicos.innerHTML += html;
     });
 
-    let tabelaEnfermeiros = document.getElementById('tabelaEnfermeiros');
+    let tbEnfermeiros = document.getElementById('tbEnfermeiros');
         hospital.getEnfermeiros().forEach( enfermeiros => {
         let html = `
         <tr>
@@ -106,10 +104,10 @@ namespace hospital{
             <td>${enfermeiros.getCoren()}</td>
         </tr>
         `;
-        tabelaEnfermeiros.innerHTML += html;
+        tbEnfermeiros.innerHTML += html;
     });
 
-    let tabelaPacientes = document.getElementById('tabelaPacientes');
+    let tbPacientes = document.getElementById('tbPacientes');
         hospital.getPacientes().forEach( pacientes => {
         let html = `
         <tr>
@@ -118,6 +116,6 @@ namespace hospital{
             <td>${pacientes.getCpf()}</td>
         </tr>
         `;
-        tabelaPacientes.innerHTML += html;
+        tbPacientes.innerHTML += html;
     });
 }

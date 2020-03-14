@@ -9,36 +9,28 @@
 </head>
 <body>
     <div class="container">
+    <div class="row">
+            <div class="col-sm">
+                 <h2 id="nomeHospital"></h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm">
                  <h2>Instancia de Paciente</h2>
             </div>
         </div>
-        <div class="row">
-       
+        <div class="row">       
             <div class="col-sm">
                 <table class="table">
+                    <thead>
                     <tr>
                          <th scope="col">Cod.:</th>
                          <th scope="col">Nome</th>
                          <th scope="col">CPF</th>
                     </tr>
-                    
-                </table>
-            </div>
-        </div>
-         <div class="row">
-            <div class="col-sm">
-                 <h2>Instancia de Funcionario</h2>
-            </div>
-        </div>
-        <div class="row">
-       
-            <div class="col-sm">
-                <table class="table">
-                    <tr>
-                        <th>Cod.:</th>
-                    </tr>
+                    </thead>                    
+                    <tbody id="tbPacientes">
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -51,13 +43,16 @@
        
             <div class="col-sm">
                 <table class="table">
+                    <thead>
                     <tr>
                         <th scope="col">Cod.:</th>
                         <th scope="col">Nome</th>
                         <th scope="col">CPF</th>
                         <th scope="col">Coren</th>
                     </tr>
-                    
+                    </thead>                    
+                    <tbody id="tbEnfermeiros">
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -71,6 +66,7 @@
        
             <div class="col-sm">
                 <table class="table">
+                    <thead>
                     <tr>
                         <th scope="col">Cod.:</th>
                             <th scope="col">Nome</th>
@@ -78,30 +74,20 @@
                             <th scope="col">CRM</th>
                             <th scope="col">Especialidade</th>
                     </tr>
+                    </thead>                    
+                    <tbody id="tbMedicos">
+                    </tbody>
                     
                 </table>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm">
-                 <h2>Instancia de Hospital</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm">
-                <table class="table">
-                    <tr>
-                        <th>Nome</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
+    </div>
     <script src="Pessoa.js"></script>
-    <script src="Enfermeiro.js"></script>
     <script src="Funcionario.js"></script>
+    <script src="Enfermeiro.js"></script>
     <script src="Medico.js"></script>
     <script src="Paciente.js"></script>
     <script src="Hospital.js"></script>
-    <script src="implenta.js"></script>
+    <script src="implementa.js"></script>
 </body>
 </html>

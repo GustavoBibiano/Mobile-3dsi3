@@ -52,7 +52,6 @@ var hospital;
     pacientes[2].setNome('Cristinao');
     pacientes[2].setCpf('22465463849');
     pacientes[2].setCodPaciente(777);
-    //Adicionando os objetos na classe Hospital
     medicos.forEach(function (medico) {
         hospital.addMedico(medico);
     });
@@ -62,22 +61,21 @@ var hospital;
     pacientes.forEach(function (paciente) {
         hospital.addPaciente(paciente);
     });
-    //Mostrando Dados do Hospital em "index.html"
     var nomeHospital = document.getElementById('nomeHospital');
     nomeHospital.textContent = hospital.getNomeHospital();
-    var tabelaMedicos = document.getElementById('tabelaMedicos');
+    var tbMedicos = document.getElementById('tbMedicos');
     hospital.getMedicos().forEach(function (medico) {
         var html = "\n        <tr>\n            <th scope=\"row\">" + medico.getCodFuncionario() + "</th>\n            <td>" + medico.getNome() + "</td>\n            <td>" + medico.getCpf() + "</td>\n            <td>" + medico.getCrm() + "</td>\n            <td>" + medico.getEspecialidade() + "</td>\n        </tr>\n        ";
-        tabelaMedicos.innerHTML += html;
+        tbMedicos.innerHTML += html;
     });
-    var tabelaEnfermeiros = document.getElementById('tabelaEnfermeiros');
+    var tbEnfermeiros = document.getElementById('tbEnfermeiros');
     hospital.getEnfermeiros().forEach(function (enfermeiros) {
         var html = "\n        <tr>\n            <th scope=\"row\">" + enfermeiros.getCodFuncionario() + "</th>\n            <td>" + enfermeiros.getNome() + "</td>\n            <td>" + enfermeiros.getCpf() + "</td>\n            <td>" + enfermeiros.getCoren() + "</td>\n        </tr>\n        ";
-        tabelaEnfermeiros.innerHTML += html;
+        tbEnfermeiros.innerHTML += html;
     });
-    var tabelaPacientes = document.getElementById('tabelaPacientes');
+    var tbPacientes = document.getElementById('tbPacientes');
     hospital.getPacientes().forEach(function (pacientes) {
         var html = "\n        <tr>\n            <th scope=\"row\">" + pacientes.getCodPaciente() + "</th>\n            <td>" + pacientes.getNome() + "</td>\n            <td>" + pacientes.getCpf() + "</td>\n        </tr>\n        ";
-        tabelaPacientes.innerHTML += html;
+        tbPacientes.innerHTML += html;
     });
 })(hospital || (hospital = {}));
